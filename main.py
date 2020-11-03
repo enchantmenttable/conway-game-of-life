@@ -5,7 +5,7 @@ import random
 import copy
 from numpy import array
 
-# TODO: 4: refactor code
+# TODO: add patterns & input handling
 
 surface = []
 
@@ -55,6 +55,7 @@ def progress(frame, img):
                 new_surface[y][x] = 0
     img.set_data(new_surface)
     surface = copy.deepcopy(new_surface)
+    print(surface)
     return img,
 
 
